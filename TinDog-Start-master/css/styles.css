@@ -1,0 +1,197 @@
+body {
+  font-family: 'Ubuntu', sans-serif;
+  text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat';
+}
+
+p {
+  color: #8f8f8f;
+}
+
+/* headings */
+.big-heading {
+  font-family: 'Montserrat';
+  font-size: 3.5rem;
+  line-height: 1.5;
+}
+
+.section-heading {
+  font-size: 2.7rem;
+  line-height: 1.5;
+}
+
+/* containers */
+.container-fluid {
+  padding: 7% 15%;
+}
+
+/* sections */
+.coloured-section {
+  background-color: #ff4c68;
+  color: #ffff;
+}
+
+.white-section {
+  background-color: #ffff;
+}
+
+/* navbar navigation */
+/* so for the container fluid in the title section specifically
+sooooo lezem selector1 selector2{} meaning that damn pne space is important
+aand we follow the hierarchical combination of selectors
+or combining selectors where there is no spaces but they have to occure in the same part
+meaning selector1selector2 targets whatever part that  has them both seletors togethter
+example h1.title ===> <h1 class="title">  */
+#title .container-fluid {
+  padding: 3% 15% 7%;
+  text-align: left;
+}
+
+.navbar {
+  padding: 0 0 4.5rem;
+}
+
+.navbar-brand {
+  font-size: 2.5rem;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.nav-item {
+  padding: 0 18px;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+}
+
+/* download Buttons */
+.download-button {
+  margin: 5% 3% 5% 0;
+}
+
+/* Title Image */
+.rotate {
+  width: 60%;
+  transform: rotate(25deg);
+  position: absolute;
+  right: 30%;
+}
+
+/* Features Section */
+#features {
+  position: relative;
+  z-index: 1;
+}
+
+.features-heading {
+  font-size: 1.2rem;
+}
+
+.feature-box {
+  padding: 5%;
+}
+
+.icon {
+  color: #ef8172;
+  margin-bottom: 1rem;
+}
+
+.icon:hover {
+  color: #ff4c68;
+}
+
+/* testimonials*/
+#testimonials {
+  text-align: center;
+  background-color: #ef8172;
+}
+
+.testimonial-image {
+  width: 10%;
+  margin: 20px 20px 30px;
+  border-radius: 100%;
+}
+
+.testimonial-text {
+  font-size: 2.7rem;
+  line-height: 1.5;
+}
+
+/* Press */
+#press {
+  background-color: #ef8172;
+  padding-bottom: 3%;
+}
+
+.logo {
+  width: 15%;
+  margin: 20px 20px 30px;
+}
+
+.em {
+  font-family: 'Ubuntu', sans-serif;
+  color: white;
+  font-weight: lighter;
+}
+
+/* Pricing */
+#pricing {
+  padding: 100px;
+  text-align: center;
+}
+
+.price-text {
+  font-size: 2.7rem;
+  line-height: 1.5;
+}
+
+.card-header {
+  font-size: 1.2rem;
+}
+
+.pricing-col {
+  padding: 3% 2%;
+}
+
+/* call to action  section */
+.cta-title {
+  font-size: 3.2rem;
+  line-height: 1.5;
+}
+
+.download2-button {
+  margin: 5% 3% 5% 0;
+}
+
+/* footer section */
+#footer {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.f-icon {
+  padding: 2%;
+  padding-bottom: 3%;
+}
+
+/* laptop 1200.. tablette 880.. so max-width: 900px means tablette and phone size
+media query break point at 900px
+we have max-width and min-width  so min-width:900px means desktop and laptop size
+or we can go: @media (min-width:900px) and (max-width:1000px)
+device width: constant
+browser size: we change fl pc to check responsiveness
+viewport: size of the screen that ur site is being displayed on*/
+@media (max-width: 1028px) {
+  .rotate {
+    position: static;
+    transform: rotate(0);
+    /* rotate back to zero  */
+  }
+
+  #title {
+    text-align: center;
+  }
+}
